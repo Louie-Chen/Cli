@@ -4,7 +4,8 @@
   "private": true,
   "scripts": {
     "serve": "vue-cli-service serve",
-    "build": "vue-cli-service build",
+    "start": "webpack --open --config webpack.dev.js",
+    "build": "vue-cli-service build --config webpack.prod.js",
     "lint": "vue-cli-service lint",
     "push_PROD": "sh deploy.sh"
   },
